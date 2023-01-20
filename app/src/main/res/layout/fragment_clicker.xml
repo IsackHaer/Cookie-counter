@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/fragmentClicker_cookie_btn"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            tools:src="@drawable/fullcookie"
+            tools:srcCompat="@drawable/fullcookie" />
+
+        <TextView
+            android:id="@+id/fragmentClicker_counter_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arizonia"
+            android:textAlignment="center"
+            android:textColor="#B37B2C"
+            android:textSize="150sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentClicker_cookie_btn"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentClicker_cookie_btn"
+            app:layout_constraintStart_toStartOf="@+id/fragmentClicker_cookie_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

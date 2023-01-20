@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cookiesjaa" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragmentHome_easy_btn"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#B37B2C"
+            android:text="Small"
+            android:textSize="18sp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#FFFFFF"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentHome_normal_btn"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentHome_normal_btn"
+            app:layout_constraintStart_toStartOf="@+id/fragmentHome_normal_btn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragmentHome_normal_btn"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#B37B2C"
+            android:text="medium"
+            android:textSize="22sp"
+            app:cornerRadius="50dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragmentHome_hard_btn"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#B37B2C"
+            android:text="huge"
+            android:textSize="26sp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#FFFFFF"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentHome_normal_btn"
+            app:layout_constraintStart_toStartOf="@+id/fragmentHome_normal_btn"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentHome_normal_btn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arizonia"
+            android:text="Cookie clicker"
+            android:textSize="68sp"
+            android:textStyle="bold"
+            android:textColor="#B37B2C"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentHome_easy_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
